@@ -1,5 +1,3 @@
-#include <cstdlib>
-#include <cstring>
 #include <iostream>
 #include <boost/asio.hpp>
 #include <string>
@@ -9,6 +7,7 @@ int main(int argc, char* argv[])
     if(argc < 3) {
         std::cout << "Error: Please run with the fallow arguments" << std::endl;
 	std::cout << "./client ip porta message" << std::endl;
+        exit(1);
     }    
     
     boost::asio::io_service io_service;
